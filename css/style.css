@@ -1,0 +1,236 @@
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+html, body {
+    background-color:rgb(0, 0, 0);
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color:ivory;
+    font-size: 100px;
+    text-align: center;
+}
+h2 {
+    color: ivory;
+    text-align: center;
+}
+
+.bigtitle {
+    text-align:center;
+    font-family: 'Arvo', serif;
+    color:ivory;
+    font-size: 120px;
+    display: inline-block;
+    font-weight: lighter ;
+   
+
+ 
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+   
+/*MENU BAR*/
+nav {
+    font-family: 'Arvo', serif; /*gives all of them the same font*/
+}
+
+nav ul {
+  list-style-type: none; /*deletes the bullets */
+}
+
+
+
+nav {
+    padding: 10px; /* Sets padding */
+}
+
+@media (min-width: 600px){
+    nav {
+      padding: 20px; /*Media query to change the menu size for smaller-
+      views such as a tablet*/
+    }
+
+    }
+
+
+    a {
+        position: relative; /* sets the line's position so it doesn't
+        fly up the page*/
+        /*I'm creating a pseudo-element for my anchor to create a 
+        a thick underline*/
+        text-decoration: none; /*Removes underline for anchor, so
+        I can substitute it*/
+    }
+
+nav ul li a::before {
+        content: ""; /*targets underline*/
+        position: absolute; /*Positions it at the bottom of the text*/
+        height: 3px; /*Gives the pseudo element (our underline) it's height*/
+        right: 0px;/*So the line extens fully across the underside of line*/
+        bottom: -3px; /*Creates space between line and text*/
+        left: 0px; /*So the line extens fully across the underside of line*/
+        background-color:ivory; /*Gives it its color*/
+     
+
+    }
+
+nav ul li a, .active {
+  color: rgb(7,168,171); /*Gives the nav element the color*/
+}
+
+  nav ul li a:hover {
+    color: ivory; /*Changes the nav element color on hovor*/
+   
+    padding-top: 10px; /*Moves the thick underline upwards on hover*/
+    transition: .6s; /*Makes it take .6 seconds to do above*/
+
+    
+
+    transition-timing-function: ease-out;/*Changes the way it transitions*/
+   
+    }
+}
+
+nav.flexbox {
+   
+    align-items: center; /*Centers them vertically, that is, up and down*/
+}
+nav.flexbox ul{
+  display: flex; /*defines my flexbox*/
+  justify-content: space-between; /*Moves "Home" to left, and the rest to right*/
+    }
+nav.flexbox ul li{
+
+        margin-right: 20px;
+}
+nav.flexbox &:last-child{
+        margin-right: 0px;  display: flex; /*defines my flexbox*/
+    justify-content: space-between; /*Moves "Home" to left, and the rest to right*/
+}
+nav.flexbox {
+    display: flex; 
+    flex-wrap: wrap; /*The other nav elements except "home" move to a new row to adapt
+    to mobile sizes */
+    justify-content: center; /*Changes the alignment of "home", which above is set to 
+    "space between" but now will move to the center in a mobile view*/
+    align-items: center; /*Aligns the rest to the center as well*/
+
+}
+
+@media (min-width: 600px){
+  nav.flexbox{
+    justify-content: space-between; /*The space-between definition for larger widths
+    of screens to align "home" left and the rest right*/
+  }
+}
+
+
+.fullwidth {
+    flex: 1 0 100%; /*Flex-grow = 1, so it can grow if needed, but not shrink with flex
+    0 as flex-shrink. Our default width is 100%. This is to make sure the other links are
+    forced to go under "home"*/
+    justify-content: center; /* Centers the menu in the mobile view*/
+
+
+}
+
+@media (min-width: 600px){
+
+  .fullwidth {
+    flex: 0 1 auto; /*In the other we allowed a flex-grow, to resize to a bigger size if 
+    necessary. Here, the desktop version should not allow that, but it can flex-shrink the 
+    secondary links if needed. The default width is automatic, so it adjusts after the rest
+    of the content*/
+  }
+}
+
+ul li {
+  flex: 0 0 100px; /*Centers the text based on the other nav items, since it otherwise
+  centers based on the full with of the second row link which makes it slightly off*/
+  margin-right: 10px; /*Reduced space between items on mobile*/
+  text-align: center; /*Aligns text to center*/
+}
+
+@media (min-width: 600px){
+  ul li {
+     flex: 0 0 auto; /*The rule under ul li should not apply for desktop, so this cancels
+     it out*/
+     margin-right: 20px; /*Space between items*/
+ }
+}
+
+@media (min-width: 600px){
+    &:last-child {
+
+  }
+}
+
+nav.flexbox > a {
+
+        margin-bottom: 10px; /*Targets the "HOME" nav item to have some extra margin to 
+        create nicer look by separating it a bit from the other items*/
+}
+
+@media (min-width: 600px){
+      nav.flexbox{  margin-bottom: 0px;/*A line that cancels out the above rule for screens
+        bigger than 600px, i.e. a desktop*/
+        }
+    }
+
+/*End of menu bar*/
+
+.topstory{
+  padding-top: 100px;
+  padding-left: 20px;
+  object-fit: cover;
+
+}
+
+.topstory2 {
+  object-fit: cover;
+  padding-top: 100px;
+}
+.topstory3 {
+  padding-top: 200px;
+  padding-right: 20px;
+  object-fit:cover;
+}
+
+.topstorytitle {
+  color: ivory;
+  font-family: 'Arvo', serif;
+  padding-left: 400px ;
+  font-size: 20px;
+  text-align: left;
+
+}
