@@ -23,7 +23,7 @@ html, body {
     text-align: center;
 }
 
-h1 {
+h1, p {
     color:ivory;
     font-size: 100px;
     text-align: center;
