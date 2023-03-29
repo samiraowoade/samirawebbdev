@@ -32,6 +32,6 @@
 
 
 .topstorytitle {
-  grid-column: 1/5;
-  grid-row: span 0.1;
+  grid-column: 1/7;
+  grid-row: span 1;
 }

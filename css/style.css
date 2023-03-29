@@ -1,4 +1,6 @@
-
+.container img {
+    border-radius: 12;
+}
 html {
     font-size: 16px;
     box-sizing: border-box;
@@ -62,6 +64,8 @@ h2 {
 /*MENU BAR*/
 nav {
     font-family: 'Arvo', serif; /*gives all of them the same font*/
+    font-size: 23px;
+
 }
 
 nav ul {
@@ -105,13 +109,13 @@ nav ul li a::before {
     }
 
 nav ul li a, .active {
-  color: rgb(7,168,171); /*Gives the nav element the color*/
+  color: rgb(7, 168, 171); /*Gives the nav element the color*/
 }
 
   nav ul li a:hover {
     color: ivory; /*Changes the nav element color on hovor*/
    
-    padding-top: 10px; /*Moves the thick underline upwards on hover*/
+    padding-top: 13px; /*Moves the thick underline upwards on hover*/
     transition: .6s; /*Makes it take .6 seconds to do above*/
 
     
@@ -230,7 +234,8 @@ nav.flexbox > a {
   color: ivory;
   font-family: 'Arvo', serif;
   padding-left: 400px ;
-  font-size: 20px;
+  font-size: 40px;
   text-align: left;
+  margin-bottom: 0;
 
 }
