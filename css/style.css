@@ -27,8 +27,11 @@ html, body {
 
 h1, p {
     color:ivory;
-    font-size: 100px;
+    font-family: 'Arvo', serif;
     text-align: center;
+}
+p {
+  font-family: 'Arvo', serif;
 }
 h2 {
     color: ivory;
@@ -64,7 +67,7 @@ h2 {
 /*MENU BAR*/
 nav {
     font-family: 'Arvo', serif; /*gives all of them the same font*/
-    font-size: 23px;
+    font-size: 20px;
 
 }
 
@@ -123,7 +126,7 @@ nav ul li a, .active {
     transition-timing-function: ease-out;/*Changes the way it transitions*/
    
     }
-}
+
 
 nav.flexbox {
    
@@ -219,23 +222,185 @@ nav.flexbox > a {
   object-fit: cover;
 
 }
-
-.topstory2 {
-  object-fit: cover;
-  padding-top: 100px;
-}
-.topstory3 {
-  padding-top: 200px;
-  padding-right: 20px;
-  object-fit:cover;
-}
-
 .topstorytitle {
   color: ivory;
   font-family: 'Arvo', serif;
-  padding-left: 400px ;
-  font-size: 40px;
-  text-align: left;
-  margin-bottom: 0;
+  font-size: 25px;
+  text-align: center;
+  border: 2px solid ivory;  
+  
+  border-radius: 2px;
+  margin: 0;
 
+  margin-top: 40px;
+  margin-left: 90px;
+  margin-right: 40px;
+  
+}
+.topstory2 {
+  object-fit: cover;
+
+  padding-right: 10px;
+
+}
+ 
+.topstory2title {
+  padding-top: 50px;
+  background-color: rgba(0, 151, 207, 0.65);
+  justify-content: center;
+  left: 0;
+  right: 10px;
+  top: -50px;
+  bottom: 0;
+  margin: auto;
+  font-size: 15px;
+}
+
+.topstory3title {
+  padding-top: 50px;
+  background-color: rgba(0, 151, 207, 0.65);
+  justify-content: center;
+  left: 0;
+  right: 10px;
+  top: -50px;
+  bottom: 0;
+  margin: auto;
+  font-size: 15px;
+}
+
+.topstory3 {
+  padding-top: 100px;
+  padding-right:10px;
+  object-fit:cover;
+}
+.topstory4 {
+  object-fit: cover;
+  padding-right: 10px;
+
+}
+
+.topstory4title {
+  padding-top: 50px;
+  background-color: rgba(0, 151, 207, 0.65);
+  justify-content: center;
+  left: 0;
+  right: 10px;
+  top: -50px;
+  bottom: 0;
+  margin: auto;
+  font-size: 15px;
+}
+
+
+.topstory5 {
+
+  padding-right:10px;
+  object-fit:cover;
+}
+.topstory5title {
+  padding-top: 50px;
+  background-color: rgba(0, 151, 207, 0.65);
+  justify-content: center;
+  left: 0;
+  right: 10px;
+  top: -50px;
+  bottom: 0;
+  margin: auto;
+  font-size: 15px;
+}
+
+
+
+
+.footer {
+  color: white;
+  font-size: 20px;
+  background-color: midnightblue;
+}
+
+img {
+  object-fit: contain;
+}
+
+.bottomtoptext {
+  border: 2px solid ivory;  
+  border-radius: 2px; 
+
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  
+}
+
+.bottomtop {
+  padding: 0;
+ 
+}
+
+.bottomtoptext2 {
+  border: 2px solid ivory;  
+  border-radius: 2px; 
+
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+  
+}
+
+.bottomtop2 {
+  padding: 0;
+ 
+}
+
+.bottomtoptext3 {
+  border: 2px solid ivory;  
+  border-radius: 2px; 
+
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  
+}
+
+.bottomtop3 {
+  padding: 0;
+ 
+}
+
+.recommendedread {
+  object-fit: contain;
+}
+
+.aiimage {
+  width: 50%;
+  height: 50%;
+}
+
+img {
+  border-radius: 2px;
+}
+
+.bigtitle2 {
+  text-align: center;
+  font-family: 'Arvo', serif;
+  color:ivory;
+  font-size: 80px;
+  display: inline-block;
+  font-weight: lighter ;
+ 
+
+
+}
+
+.intro{
+  column-count: 2;
+}
+
+.introparag {
+  text-align: left;
+  
+  font-weight:lighter;
 }
