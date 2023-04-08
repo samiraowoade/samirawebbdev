@@ -15,6 +15,9 @@ body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+a {
+  color: white;
+}
 
 
 html, body {
@@ -254,6 +257,7 @@ nav.flexbox > a {
   bottom: 0;
   margin: auto;
   font-size: 15px;
+  color: white;
 }
 
 .topstory3title {
