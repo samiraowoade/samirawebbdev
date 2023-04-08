@@ -11,7 +11,7 @@ body {
     padding: 0px;
     min-height: 100vh;
 }
-
+ 
 *, *::before, *::after {
     box-sizing: inherit;
 }
