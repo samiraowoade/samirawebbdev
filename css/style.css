@@ -316,6 +316,7 @@ nav.flexbox > a {
   color: white;
   font-size: 20px;
   background-color: midnightblue;
+  text-align: center;
 }
 
 img {
