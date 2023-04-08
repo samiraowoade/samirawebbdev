@@ -312,13 +312,20 @@ nav.flexbox > a {
 
 
 
-.footer {
+.footer, .footer2 {
   color: white;
   font-size: 20px;
   background-color: midnightblue;
   text-align: center;
+ 
+  margin: 0;
 }
 
+.footer2{
+  padding-left: 600px;
+  padding-right: 600px;
+  margin-top: 300px;
+}
 img {
   object-fit: contain;
 }
@@ -397,11 +404,17 @@ img {
 }
 
 .intro{
+  margin-top: 100px;
   column-count: 2;
+  column-width: 250px;
+  
 }
 
-.introparag {
+.introparag, .bodytext {
   text-align: left;
   
   font-weight:lighter;
+}
+.introparag {
+  column-span: all;
 }
