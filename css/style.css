@@ -1,15 +1,15 @@
 .container img {
-    border-radius: 12;
+    border-radius: 2px; /*Gives all my grid images slightly rounded corners*/
 }
 html {
     font-size: 16px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Includes border and padding in an elements total dimensions */
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    min-height: 100vh;
+    margin: 0px; /*Gives all elements default zero margin*/
+    padding: 0px; /*Gives all elements default zero padding*/
+    min-height: 100vh; /*Makes it occupy all the space on the screen */
 }
  
 *, *::before, *::after {
@@ -222,7 +222,7 @@ nav.flexbox > a {
 .topstory{
   padding-top: 100px;
   padding-left: 20px;
-  object-fit: cover;
+  object-fit: cover; /*Defines how an image which isn't fully displayed should fill out box*/
 
 }
 .topstorytitle {
@@ -304,7 +304,7 @@ nav.flexbox > a {
 .topstory5title {
   padding-top: 50px;
   background-color: rgba(0, 151, 207, 0.65);
-  justify-content: center;
+  justify-content: center;/*Aligns content to the center vertically */
   left: 0;
   right: 10px;
   top: -50px;
@@ -420,5 +420,5 @@ img {
   font-weight:lighter;
 }
 .introparag {
-  column-span: all;
+  column-span: all; /* Makes my intro paragraph span all columns and ignore them */
 }
