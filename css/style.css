@@ -382,14 +382,6 @@ img {
  
 }
 
-.recommendedread {
-  object-fit: contain;
-}
-
-.aiimage {
-  width: 50%;
-  height: 50%;
-}
 
 img {
   border-radius: 2px;
@@ -409,16 +401,35 @@ img {
 
 .intro{
   margin-top: 100px;
-  column-count: 2;
+  column-count: 4;
   column-width: 250px;
   
 }
 
-.introparag, .bodytext {
-  text-align: left;
-  
+.introparag{
+  text-align: justify;
+  font-size: 25px;
   font-weight:lighter;
+
+
 }
 .introparag {
   column-span: all; /* Makes my intro paragraph span all columns and ignore them */
+ 
+}
+
+.bodytext {
+  text-align: left;
+  margin-top: 0;
+  font-weight:lighter;
+}
+
+
+.topstory3 on:hover {
+  padding-left: 30px;
+}
+
+
+.recc {
+  object-fit: cover;
 }
